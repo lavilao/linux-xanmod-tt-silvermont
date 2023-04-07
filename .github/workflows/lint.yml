@@ -6,7 +6,7 @@ on:
       - '.github/workflows/lint.yml'
   workflow_dispatch:
 jobs:
-  linux-cachyos-lto:
+  linux-xanmod-tt:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout

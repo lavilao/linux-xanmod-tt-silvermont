@@ -15,6 +15,7 @@ jobs:
       id: makepkg
       uses: CachyOS/pkgbuild-action@master
       with:
+        envvars: "_microarchitecture=31 use_numa=n _compiler=clang"
         pkgdir: "./"
         namcapExcludeRules: "invalidstartdir"
         makepkgArgs: "--skipchecksums --skippgpcheck --noconfirm -s"
